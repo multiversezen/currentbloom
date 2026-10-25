@@ -1,0 +1,54 @@
+:root {
+  --paper: #EFEDE4;
+  --card: #F4F1E8;
+  --ink: #313728;
+  --sub: #6B6E62;
+  --leaf: #56693F;
+  --line: #C4C2B8;
+  --serif: "Noto Serif TC", "Songti TC", serif;
+  --latin: "EB Garamond", Georgia, serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+}
+a { color: var(--leaf); text-underline-offset: 3px; }
+.wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+
+header.site { padding: 28px 0 0; }
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; }
+header.site a.home { display: flex; align-items: center; gap: 10px; color: var(--sub); text-decoration: none; font-size: 15px; letter-spacing: 0.26em; }
+header.site img { width: 26px; height: 26px; }
+header.site nav a { color: var(--sub); text-decoration: none; font-size: 14px; letter-spacing: 0.2em; margin-left: 18px; }
+header.site nav a:hover { color: var(--ink); }
+
+.hero { text-align: center; padding: 72px 0 56px; }
+.hero img.logo { width: min(420px, 86vw); height: auto; }
+.hero .line { margin: 36px 0 6px; font-size: clamp(17px, 4.6vw, 22px); letter-spacing: 0.14em; white-space: nowrap; }
+.hero .en { font-family: var(--latin); font-style: italic; color: var(--sub); font-size: 19px; letter-spacing: 0.01em; }
+.badge { display: inline-block; margin-top: 32px; padding: 10px 22px; border: 1px solid var(--line); border-radius: 999px; color: var(--sub); font-size: 14px; letter-spacing: 0.2em; }
+
+.card { background: var(--card); border: 1px solid rgba(49,55,40,0.08); border-radius: 24px; padding: 32px 28px; margin: 0 0 28px; }
+.card h2 { margin: 0 0 12px; font-size: 19px; font-weight: 500; letter-spacing: 0.16em; }
+.card p { margin: 0 0 12px; }
+.card p:last-child { margin-bottom: 0; }
+
+article { padding: 48px 0 24px; }
+article h1 { font-size: 26px; font-weight: 500; letter-spacing: 0.16em; margin: 0 0 4px; }
+article .date { color: var(--sub); font-size: 14px; margin: 0 0 32px; }
+article h2 { font-size: 19px; font-weight: 500; letter-spacing: 0.12em; margin: 36px 0 8px; }
+article ul { padding-left: 1.2em; margin: 8px 0; }
+article li { margin: 4px 0; }
+.en-block { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--line); font-family: var(--latin); font-size: 18px; letter-spacing: 0; line-height: 1.7; }
+.en-block h1, .en-block h2 { font-family: var(--latin); letter-spacing: 0.01em; }
+.en-block h1 { font-style: italic; font-weight: 400; }
+
+footer.site { padding: 40px 0 48px; color: var(--sub); font-size: 13px; letter-spacing: 0.12em; text-align: center; }
+footer.site a { color: var(--sub); margin: 0 8px; }
