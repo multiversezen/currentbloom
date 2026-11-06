@@ -33,7 +33,7 @@ header.site nav a:hover { color: var(--ink); }
 .hero img.logo { width: min(420px, 86vw); height: auto; }
 .hero .line { margin: 36px 0 6px; font-size: clamp(17px, 4.6vw, 22px); letter-spacing: 0.14em; white-space: nowrap; }
 .hero .en { font-family: var(--latin); font-style: italic; color: var(--sub); font-size: 19px; letter-spacing: 0.01em; }
-.badge { display: inline-block; margin-top: 32px; padding: 10px 22px; border: 1px solid var(--line); border-radius: 999px; color: var(--sub); font-size: 14px; letter-spacing: 0.2em; }
+.badge { display: inline-block; text-decoration: none; margin-top: 32px; padding: 10px 22px; border: 1px solid var(--line); border-radius: 999px; color: var(--sub); font-size: 14px; letter-spacing: 0.2em; }
 
 .card { background: var(--card); border: 1px solid rgba(49,55,40,0.08); border-radius: 24px; padding: 32px 28px; margin: 0 0 28px; }
 .card h2 { margin: 0 0 12px; font-size: 19px; font-weight: 500; letter-spacing: 0.16em; }
@@ -52,3 +52,6 @@ article li { margin: 4px 0; }
 
 footer.site { padding: 40px 0 48px; color: var(--sub); font-size: 13px; letter-spacing: 0.12em; text-align: center; }
 footer.site a { color: var(--sub); margin: 0 8px; }
+
+a.badge { color: var(--ink); border-color: var(--ink); }
+a.badge:hover { background: var(--ink); color: var(--paper); }
